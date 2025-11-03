@@ -1,18 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SRNM MATRIC HIGHER SEC SCHOOL</title>
+    <style>
+        h1 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            background: white;
+            padding: 20px;
+
+        }
+
+        body {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: left;
+            background: yellowgreen;
+            margin: 20px;
+
+        }
+    </style>
 </head>
+
 <body>
     <h1>STUDENT ADMISSION FORM</h1>
 
-    <form>
-        <table>
+    <form action="https://formspree.io/f/myzbvbbd" method="POST">
+        <label>FULL NAME:</label>
+        <input type="text" name="full name" placeholder="enter your name" required> <br><br>
 
-        </table>
+        <label>PHOTO:</label>
+        <input type="file" name="photo"> <br><br>
+
+        <label>AGE:</label>
+        <input type="number" name="age" min="1" max="100"> <br><br>
+
+        <label>DOB:</label>
+        <input type="date" name="dob" min="2010-01-01" max="2025-01-01"> <br><br>
+
+        <label>ATTACH BIRTH CERTIFICATE:</label>
+        <input type="file" name="attach birth certificate"> <br><br>
+
+        <label>GENDER:</label>
+        <select name="gender">
+            <option value="">--select--</option>
+            <option>male</option>
+            <option>female</option>
+            <option>others</option>
+        </select><br><br>
+
+        <label>NATIONALITY:</label>
+        <select name="nationality">
+            <option>--select--</option>
+            <option>INDIAN</option>
+            <option>AMERICAN</option>
+            <option>CANADIAN</option>
+            <option>others</option>
+        </select><br><br>
+
+        <label>RELIGION:</label>
+        <input type="text" name="religion"> <br><br>
+
+
+        <label>COMMUNITY/CAST:</label>
+        <input type="text" name="community/cast"> <br><br>
+
+        <label>ADHARCARD NUMBER:</label>
+        <input type="number" name="adhar number"> <br><br>
+
+        <label>PHONE NUMBER:</label>
+        <input type="number" name="phone"> <br><br>
+
+        <label>EMAIL:</label>
+        <input type="email" name="email"> <br><br>
+
+        <label>ADDRESS:TEMPORARY/PERMANENT:-</label><br>
+        <textarea name="address" rows="5" cols="60" placeholder="TEMPORARY/PERMANENT">
+        </textarea><br><br>
+
+        <label>PARENT/GUARDIAN:</label><br>
+        <input type="checkbox" name="parent-type" value="father"> FATHER
+        <input type="checkbox" name="parent-type" value="mother"> MOTHER
+        <input type="checkbox" name="parent-type" value="guardian">GUARDIAN
+        <br><br>
+
+        <label>FATHER'S NAME/GUARDIAN NAME:</label>
+        <input type="text" name="father's name"><br><br>
+
+        <label>FATHER OCCUPATION:</label>
+        <input type="text" name="father occupation"><br><br>
+
+        <label>MOTHER'S NAME:</label>
+        <input type="text" name="mother's name"><br><br>
+
+        <label>MOTHER OCCUPATION:</label>
+        <input type="text" name="mother occupation"><br><br>
+
+        <label>PARENTS PHONENUMBER:</label>
+        <input type="number" name="phonenumber"><br><br>
+
+        <label>ANNUAL INCOME:</label>
+        <input type="number" name="income"> <br><br>
+
+        <label>MEDICAL ISSUE/DISABILITY:</label>
+        <input type="radio" name="medical issue" value="yes"> YES
+        <input type="radio" name="medical issue" value="no"> NO
+        <br><br>
+
+        <label>BLOODGROUP:</label>
+        <select name="blood_group">
+            <option value="">--Select--</option>
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>O+</option>
+            <option>O-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+        </select>
+        <br><br>
+
+        <label>Add Transfer Certificate:</label>
+        <input type="file" name="tc"><br><br>
+
+        <label>Identification Marks:</label>
+        <input type="text" name="id_marks"><br><br>
+
+        <label>Extra-Curricular Activities:</label>
+        <input type="text" name="activities"><br><br>
+
+        <label>Mother Tongue:</label>
+        <select name="mother_tongue">
+            <option value="">--Select--</option>
+            <option>English</option>
+            <option>Hindi</option>
+            <option>Tamil</option>
+            <option>Telugu</option>
+            <option>Malayalam</option>
+            <option>Other</option>
+        </select>
+        <br><br>
+
+        <input type="submit" value="Submit Form">
+        <input type="reset" value="Reset">
+
     </form>
-    
 </body>
+
 </html>
+<!-- Task 1:
+Create your own Student Admission Form using all the input types from today’s lesson.
+Task 2:
+Add a file upload field for photo and certificates.
+Task 3:
+Add a dropdown list for gender, blood group, and nationality.
+Task 4:
+Add a checkbox group for selecting parent/guardian type.
+Task 5:
+Include text boxes for occupation, religion, and extra-curricular activities.
+Bonus Task:
+Add form validation using attributes like required, min, max, and placeholder. -->
