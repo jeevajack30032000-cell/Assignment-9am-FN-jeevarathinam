@@ -1,0 +1,33 @@
+body{
+    background-color:lightcyan;
+}
+
+h1{
+    color: green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+/* element selector */
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: red
+}
+
+footer{
+    font-family: cursive;
+    font-size: large;
+    text-align: center;
+    color: blueviolet;
+}
+/* class selector */
+.blue{
+   background-color: blue;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.green{
+    background-color: green;
+}
