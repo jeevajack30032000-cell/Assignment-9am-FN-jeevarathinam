@@ -10,7 +10,9 @@ h1{
 /* element selector */
 p{
     font-family: Arial, Helvetica, sans-serif;
-    color: red
+    color: red;
+    font-size: 30px;
+    text-align: center;
 }
 
 footer{
