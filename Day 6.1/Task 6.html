@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN PAGE</title>
+    <style>
+     form{
+            display: inline-block;
+            text-align: left;
+            background-color: beige;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+
+        input[type="text"]{
+            border: 5px solid red;
+        }
+
+        input[type="password"]{
+            border: 5px solid green;
+        }
+
+        input[type="email"]{
+            border: 5px solid blue;
+        }
+
+        input[type="date"]{
+            border: 5px solid yellow;
+        }
+
+        h1{
+            color: white;
+            background-color: pink;
+        }
+
+        body{ 
+            text-align: center;
+            border: 10px solid black;
+            padding: 10px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        input[type="submit"]:hover{
+            background-color: lightgreen;
+        }
+        </style>
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+    <h1>LOGIN PAGE</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" placeholder="enter full name" required><br><br>
+        <label for="DOB">DOB:</label>
+        <input type="date" required><br><br>
+        <label for="email">email:</label>
+        <input type="email" placeholder="enter your mail" required><br><br>
+        <label for="password">password</label>
+        <input type="password" placeholder="enter your password" required><br><br>
+        <label for="confirm-password">confirm-password:</label>
+        <input type="password" placeholder="enter confirm-password" required><br><br>
+
+    </form>
+
+</body>
+
+</html>
