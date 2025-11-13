@@ -7,23 +7,25 @@
     <title>PRACTICE Task</title>
     <style>
         body {
-             margin: 0px;
+            margin: 0;
             font-family: 'Times New Roman', Times, serif;
-            background: linear-gradient(to right pink);
+            background: linear-gradient(to right, rgb(52, 199, 243));
+            
         }
-
-        h1 {
+         h1 {
             text-align: center;
+            background-color: rgb(246, 179, 34);
             font-size: 60px;
             text-shadow: 3px 3px 5px black;
-            color: black;
-            transform: rotate(-3deg);
-            margin-top: 40px;
+            color: rgb(129, 233, 249);
+            transform: rotate(-3deg);     /* Experiment with text shadows and transformations. */
+            margin-top: 20px;
 
         }
 
         .banner {
             height: 300px;
+            background-image: url(./gradiant\ image.jpg);        /*Create a colored gradient background for your homepage.*/
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -38,7 +40,7 @@
         .container {
             position: relative;
             height: 400px;
-            background-color: aquamarine;
+            background-color: rgb(204, 232, 222);
             border-radius: 10px;
             margin: 40px;
 
@@ -47,8 +49,8 @@
         .a1 {
             width: 150px;
             height: 150px;
-            background: azure;
-            position: relative;
+            background: rgb(2, 123, 123);
+            position:relative;
             top: 20px;
             left: 20px;
             text-align: center;
@@ -58,10 +60,10 @@
         .a2 {
             width: 150px;
             height: 150px;
-            background: pink;
+            background: rgb(174, 38, 60);
             position: absolute;
-            top: 20px;
-            left: 20px;
+            top: 150px;
+            left: 150px;
             text-align: center;
         }
 
@@ -71,7 +73,7 @@
             background: yellow;
             position: fixed;
             top: 20px;
-            left: 20px;
+            right: 20px;
             text-align: center;
         }
     </style>
@@ -80,11 +82,11 @@
 
 <body>
     <h1> HELLO WORLD AM JEEVA HERE</h1>
-    <div class="banner"> <b>MR.jack is my ID</b>
+    <div class="banner"> <b>MR.jack is my ID (background fixed)</b>
     </div>
     <div class="container">
         <div class="a1"> <b>this section is for the relative</b></div>
-        <div class="a2"><b>this section is for absolute</b></div>
+        <div class="a2"> <b>this section is for absolute</b></div>
     </div>
     <div class="a3"><b>this section is for fixed</b>
     </div>
