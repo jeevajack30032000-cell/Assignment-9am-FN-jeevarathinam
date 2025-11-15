@@ -1,22 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRACTICE TASK</title>
+    <title>TASK-1 DISPLAY VALUES</title>
+    <style>
+        body {
+            background-color: silver;
+            margin: 0;
+        }
+
+        h1 {
+            background-color: goldenrod;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 10px;
+        }
+
+        .box {
+            background-color: rgb(189, 241, 223);
+            color: black;
+            border: 5px solid black;
+            border-radius: 10px;
+            margin: 30px;
+            width: 300px;
+            height: 150px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .block {
+            display: block;
+            padding: 10px;
+            background-color: rgb(252, 103, 115);
+        }
+
+        .inline {
+            display: inline;
+            background-color: burlywood;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .inline-block {
+            display: inline-block;
+            padding: 10px;
+            text-align: right;
+        }
+
+        .none {
+            display: none;
+        }
+    </style>
 </head>
+
 <body>
-    
-    
+    <h1>
+        Display values
+    </h1>
+    <div class="box block">block element</div>
+    <div class="box block">block element2</div>
+
+    <div class="box inline">inline element</div>
+    <div class="box inline">inline element2</div>
+
+    <div class="box inline-block">inline-block element</div>
+    <div class="box inline-block">inline-block element2</div>
+
+    <div class="none">none</div>
+
 </body>
+
 </html>
-
-<!-- Experiment with all display values (block, inline, etc.).
-
-Float an image beside text and fix layout with clearfix.
-
-Create a 3-box layout using Flexbox.
-
-Center an element vertically and horizontally using Flexbox.
-
-Create a simple 2x2 grid layout. -->
