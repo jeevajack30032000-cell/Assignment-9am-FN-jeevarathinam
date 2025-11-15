@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-5 2x2 grid layout</title>
+    <style>
+        body{
+            background-color: goldenrod;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(2, 0fr);
+            grid-gap: 10px;
+            margin-left: 30%;
+
+        }
+        img{
+            width: 250px;
+        }
+        .grid{
+            background-color: blanchedalmond;
+            border-radius: 1px;
+            text-align: center;
+        }
+        .grid1{
+            margin-left: 100%;
+            margin-top: 10px;
+
+        }
+        h1{
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>captcha:</h1>
+    <h2>find the car:</h2>
+    <hr>
+    <div class="grid-container">
+        <div class="grid"><button type="button"><img src="./car image.jpg" alt="car image"></button></div>
+        <div class="grid"><button type="button"><img src="./road iamge.jpg" alt="road image"></button></div>
+        <div class="grid"><button type="button"><img src="./cartoon car image.jpg" alt="car image"></button></div>
+        <div class="grid"><button type="button"><img src="./empty road image.jpg" alt="road iamge"></button></div>
+
+        <div class="grid1"><button type="button">submit</button></div>
+
+    </div>
+
+
+</body>
+
+</html>

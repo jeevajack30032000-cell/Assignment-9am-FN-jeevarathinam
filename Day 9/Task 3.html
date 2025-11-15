@@ -4,16 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FLEX BOX</title>
+    <style>
+        .flex-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: lightsalmon;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .flex-box{
+            background-color: rgb(239, 243, 7);
+            border: 3px solid black;
+            border-radius: 5px;
+            flex: 1;
+            margin: 10px;
+            text-align: center;
+            
+        }
+        img{
+            width: 300px;
+        }
+        h2{
+            text-transform: uppercase;
+            text-align: center;
+            background-color: rgb(156, 205, 248);
+            padding: 20px;
+            margin: 0;
+        }
+    </style>
 
 </head>
 <body>
-    <h1>
+    <h2>
+        flex box layout
+    </h2>
+    
+    <div class="flex-container">
 
-    </h1>
+        <div class="flex-box">
+            <img src="./focus image.jpg" alt="focus">
+        </div>
+        <div class="flex-box">
+            <img src="./discipline.jpg" alt="discipline">
+        </div>
+        <div class="flex-box">
+            <img src="./consistency image.jpg" alt="consistency">
+        </div>
+    </div>
     </p>
     
 </body>
 </html>
 
 
-Create a 3-box layout using Flexbox.
+<!-- Create a 3-box layout using Flexbox. -->
