@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCT GRID</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: silver;
+            padding: 20px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+
+        }
+
+        .product {
+            background-color: gold;
+            text-align: center;
+            padding: 20px;
+            border-radius: 5px;
+
+        }
+
+        .product img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2>product grid</h2>
+    <div class="grid-container">
+
+        <div class="product"><img src="./jersey no.1.jpg" alt="jersey"><br>
+            <button type="button">add to cart</button>
+            <button type="button">buy</button>
+        </div>
+
+        <div class="product"><img src="./Jersey no.2.jpg" alt="jersey"><br>
+            <button type="button">add to cart</button>
+            <button type="button">buy</button>
+        </div>
+
+        <div class="product"><img src="./Jersey no.3.jpg" alt="jersey"><br>
+            <button type="button">add to cart</button>
+            <button type="button">buy</button>
+        </div>
+
+        <div class="product"><img src="./Jersey no.4.jpg" alt="jersey"><br>
+            <button type="button">add to cart</button>
+            <button type="button">buy</button>
+        </div>
+
+        <div class="product"><img src="./Jersey no.5.jpg" alt="jersey"><br>
+            <button type="button">add to cart</button>
+            <button type="button">buy</button>
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+<!-- Build a product grid using grid-template-columns. -->
