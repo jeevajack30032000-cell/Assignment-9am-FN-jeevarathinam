@@ -1,29 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>full-page layout</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "nav main aside"
+                "footer footer footer";
+            grid-template-columns: 200px 1fr 200px;
+            grid-template-rows: 80px 1fr 60px;
+            min-height: 100vh;
+            gap: 10px;
+            text-align: center;
+        }
+         header {
+            grid-area: header;
+            background: #4679bd;
+            color: #fb0202;
+            padding: 20px;
+        }
+
+       
+
+        nav {
+            grid-area: nav;
+            background: #8cb3f9;
+            padding: 20px;
+        }
+
+        main {
+            grid-area: main;
+            background: #e9e9e9;
+            padding: 20px;
+        }
+
+        aside {
+            grid-area: aside;
+            background: #c7dffc;
+            padding: 20px;
+        }
+
+        footer {
+            grid-area: footer;
+            background: #1b3b7a;
+            color: #faeded;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <h2></h2>
-    </header>
-    <nav>
-        
-    </nav>
-    <main>
+    <div class="container">
+        <header>KTM INDIA</header>
+        <nav>
+            home > ktm bikes > naked bikes >
+        </nav>
+        <main>main content</main>
+        <aside>aside</aside>
+        <footer>
+            &copy;| all right resevered by KTM
+        </footer>
+    </div>
 
-    </main>
-    <aside>
-
-    </aside>
-    <footer>
-        &copy;
-    </footer>
-    
 </body>
+
 </html>
 
 <!-- Create a full-page layout with header, nav, main, aside, and footer using grid-template-areas. -->
-
