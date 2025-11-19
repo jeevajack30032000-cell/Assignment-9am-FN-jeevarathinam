@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Tasks</title>
+    <style>
+        h2 {
+            text-align: center;
+            background-color: rgb(208, 237, 237);
+            padding: 20px;
+            margin: 0;
+        }
+
+        /* task 1: block, inline, and inline-block */
+
+        .block {
+            display: block;
+            background-color: rgb(4, 246, 254);
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .inline {
+            display: inline;
+            background-color: rgb(190, 116, 3);
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .inline-block {
+            display: inline-block;
+            background-color: rgb(250, 184, 184);
+            padding: 30px;
+            margin: 10px;
+
+        }
+
+
+        /* task 2: Float two images left and right and apply clearfix */
+
+        .float-image {
+            background-color: rgb(125, 122, 122);
+            border-radius: 5px solid rgb(255, 255, 255);
+            padding: 20px;
+            overflow: auto;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .float-left {
+            background-color: black;
+            float: left;
+            width: 300px;
+
+
+        }
+
+        .float-right {
+            background-color: black;
+            float: right;
+            width: 300px;
+        }
+
+        /* task 3: build a flex container with three boxes evenly spaced */
+
+        .flex-evenly {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 20px;
+
+        }
+
+        .flex-evenly div {
+            background-color: blue;
+            padding: 20px;
+            color: blanchedalmond;
+            border-radius: 5px;
+        }
+
+        /* task 4 :Align one flex item to the bottom using align-self */
+        .align-self {
+            display: flex;
+            background-color: gold;
+            padding: 20px;
+            border: 10px;
+            height: 100px;
+
+        }
+
+        .align-self div {
+            background-color: aqua;
+            padding: 20px;
+            margin-right: 10px;
+        }
+
+        /* task 5: Create a 2-column grid layout with a header and footer. */
+
+        .twocolumn-grid {
+            background-color: antiquewhite;
+            display: grid;
+            grid-template-areas:
+                " header header "
+                " aside  main "
+                " footer footer";
+            grid-template-columns: 100px auto;
+            grid-template-rows: 80px auto 80px;
+            min-height: 500px;
+        }
+
+        header {
+            grid-area: header;
+            display: grid;
+            justify-content: center;
+            background: #4679bd;
+            color: #fff;
+            padding: 20px;
+        }
+
+        aside {
+            grid-area:aside;
+            display: grid;
+            background: #8cb3f9;
+            padding: 10px;
+        }
+
+        main {
+            grid-area: main;
+            display: grid;
+            background: #e9e9e9;
+            justify-content: center;
+            
+        }
+        footer {
+            grid-area: footer;
+            background: #3f5b91;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h1>task 1</h1>
+
+    <div class="block"> block </div>
+    <span class="inline"> inline 1 </span>
+    <span class="inline"> inline 2 </span>
+    <div class="inline-block"> inline-block </div>
+
+    </div>
+
+    <hr>
+
+    <h1>task 2</h1>
+
+    <h2> MARVEL MEN'S WEAR </h2>
+    <div class="float-image">
+        <img src="../Day 9/jersey no.1.jpg" class="float-left">
+        <img src="../Day 9/Jersey no.5.jpg" class="float-right">
+        <p>peoples it's discount time grab the jersey in discount price just one step away own it, feel it.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus sint, delectus odit nobis laboriosam ipsum
+            voluptas officiis. Quidem possimus vero sed alias perspiciatis a rerum, eum magnam, nisi impedit porro
+            mollitia quos. Autem minus sequi eveniet omnis odit labore quo, inventore in dolor ipsa tempora
+            reprehenderit, non harum, quasi veritatis. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Necessitatibus itaque quam iure ducimus natus eaque error et facilis explicabo placeat. Soluta, a. Iste
+            corrupti commodi corporis dolore nesciunt reiciendis ducimus quod labore dignissimos? Voluptates reiciendis
+            provident dicta quidem sed unde, eaque est? Fuga sunt iusto ipsa excepturi ex, inventore saepe magnam velit
+            quasi consectetur illum nobis harum fugiat eum reprehenderit? Officia, reprehenderit totam accusantium
+            inventore mollitia odit, culpa, quaerat nam praesentium delectus velit voluptates ullam pariatur obcaecati
+            doloribus! Cupiditate eius odit ut veritatis rem, aliquam et velit omnis neque excepturi nam obcaecati
+            labore, laudantium rerum soluta eveniet voluptas, ipsam nihil?F</p>
+    </div>
+
+    <hr>
+
+    <h1>task 3</h1>
+    <h2> Flex box evenly </h2>
+    <div class="flex-evenly">
+        <div>box 1</div>
+        <div>box 2</div>
+        <div>box 3</div>
+    </div>
+
+    <hr>
+
+    <h1>task 4</h1>
+
+    <h2> flex box align-self </h2>
+    <div class="align-self">
+        <div>box 1</div>
+        <div>box 2</div>
+        <div style="align-self: center;">box 3</div>
+        <div style="align-self: flex-end;">box 4</div>
+        <div style="align-self: flex-start;">box 5</div>
+        <div>box 6</div>
+    </div>
+
+    <hr>
+
+    <h1>task 5</h1>
+
+    <div class="twocolumn-grid">
+        <header>RED BULL</header>
+        <aside>home|aboutus|contact</aside>
+        <main>main-content</main>
+        <footer>&copy;all right resevered by REDBULL</footer>
+    </div>
+
+    <hr>
+
+</body>
+
+</html>
