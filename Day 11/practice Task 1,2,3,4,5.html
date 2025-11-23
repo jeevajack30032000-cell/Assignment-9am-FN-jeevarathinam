@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 1 practice Task</title>
+    <style>
+        *{
+            margin: 1px;
+        }
+
+        body {
+            background-color: darkkhaki;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                "header header header"
+                "main main main"
+                "footer footer footer";
+            gap: 30px;
+        }
+
+        .header {
+            grid-area: header;
+            border: 2px solid;
+            text-align: center;
+            background-color: rgb(236, 219, 197);
+            padding: 10px;
+
+        }
+
+        .main {
+            grid-area: main;
+            border: 2px solid;
+            text-align: justify;
+            background-color: rgb(107, 193, 215);
+            padding: 20px;
+
+        }
+
+        .footer {
+            grid-area: footer;
+            border: 2px solid;
+            text-align: center;
+            background-color: rgb(114, 245, 245);
+            padding: 30px;
+        }
+
+        .Container:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Container">
+        <header class="header">
+            <h1>About Eiffle Tower</h1>
+        </header>
+        <main class="main">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit perspiciatis veniam natus id vero fugiat.
+                Itaque saepe minus deserunt sapiente iure unde! Qui aliquam odio accusamus sunt architecto vero
+                voluptatum, aperiam atque, ratione dignissimos quo provident ex? Minus reprehenderit rem optio.
+                Molestias, ipsam quia aperiam iste repudiandae quae, nam eos tempora sit eaque dicta illo. Officia
+                consequatur sequi voluptatum sunt, recusandae temporibus iusto atque fugit non impedit facere doloremque
+                explicabo totam at beatae necessitatibus ratione iure veniam ipsam modi quidem voluptatem.
+                Exercitationem impedit, repellat incidunt illo praesentium aspernatur aliquid reprehenderit maiores
+                explicabo, debitis ea cum amet cumque, quia nam harum. Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Molestias consequatur suscipit delectus quidem itaque minima maiores necessitatibus
+                incidunt inventore debitis impedit officiis quia blanditiis nobis illum neque ut error maxime, nostrum
+                ipsam. Quidem, officia dolores mollitia delectus laborum, quae rerum, architecto dolor voluptates nam
+                veniam iure. Similique error praesentium, molestias nisi tempora amet reprehenderit aperiam ex, hic
+                cupiditate laboriosam porro unde, quia sunt ipsam quam maiores facilis dolore rem voluptate cum deserunt
+                ab. Sunt iste explicabo inventore sint, deleniti asperiores consequatur eius eaque, ut repellendus
+                facilis. Saepe, quas. Maxime sapiente dolores molestias pariatur dolorum nam, velit sint fugiat sed
+                similique?</p>
+        </main>
+        <footer class="footer">&copy; all rights are resevered | 2025</footer>
+    </div>
+
+</body>
+
+</html>
+
+
+
+<!-- practice task
+Create a 3x2 grid using grid-template-columns and grid-template-rows.
+
+Use fr units to divide space equally among 4 columns.
+
+Add gap between grid items.
+
+Name grid areas “header”, “main”, and “footer” in a simple layout.
+
+Use repeat() to simplify grid definitions. -->
