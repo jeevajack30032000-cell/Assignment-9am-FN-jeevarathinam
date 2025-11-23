@@ -10,37 +10,50 @@
             margin: 0;
             font-family: 'Times New Roman', Times, serif;
         }
+
+
         .layout-container {
             display: flex;
             flex-direction: column;
-            min-height: 100vh;
+            margin: 0;
+
 
         }
-        header,footer{
+
+        header,
+        footer {
             background-color: firebrick;
             border: 1px solid white;
             color: white;
             padding: 10px;
             text-align: center;
+            margin: 0;
 
         }
-        .main-content {
-            background-color: cornsilk;
-            padding: 10px;
-            background-color: darkgoldenrod;
-            color: aliceblue;
+
+        .float-image {
+            background-color: rgb(125, 122, 122);
+            border-radius: 5px solid rgb(255, 255, 255);
+            padding: 20px;
+            overflow: auto;
+            margin: 10px;
             text-align: center;
-            border-radius: 5px solid white;
-            display: flex;
-            flex: 1;
-            overflow: cover;
-
         }
-        .sidebar img {
-          
-            margin-top: 50px;
-            border: 1px solid grey;
-            border-radius: 10px;
+
+        .float-image p {
+            font-size: 30px;
+        }
+
+        .float-left {
+            background-color: black;
+            float: left;
+            width: 300px;
+        }
+
+        .float-right {
+            background-color: black;
+            float: right;
+            width: 300px;
         }
     </style>
 </head>
@@ -50,37 +63,37 @@
         <header>
             <h2>AMERICA GOT TALENT</h2>
         </header>
-        <aside class="sidebar">
-            <img src="./AMERICAN GOT TALENTY.jpg" alt="AOT">
-            
-        </aside>
-            <main class="main-content">
-                <p>
-                    Sofia Vergara gave her a golden buzzer, which landed her directly on the live round of the season
-                    finale. The Modern Family star called her “little pregnant angel,” while praising her performance.
-                    As
-                    the curtains close for America’s Got Talent Season 20, Here's a look at all the past winners from
-                    Season
-                    1 to 19.
-
-                    1. Bianca Ryan- Season 1
-                    Bianca Ryan won the first season of America’s Got Talent in 2006 at age 11, launching a recording
-                    and
-                    performing career that continues today. After a debut album and several singles, she faced voice
-                    issues
-                    and underwent vocal surgery as per People, but returned to music with new releases and performances
-                    through the 2010s and 2020s. Ryan has also acted and appeared in stage projects while keeping a
-                    lower
-                    public profile than later winners.
-
-
-                </p>
-            </main>
-            <footer>
-                &copy;all right resevered by AOT | 2025
-            </footer>
+        <main>
+            <div class="float-image">
+                <img src="./AMERICAN GOT TALENTY.jpg" class="float-left">
+                <img src="./AMERICAN GOT TALENTY.jpg" class="float-right">
+                <p>peoples it's discount time grab the jersey in discount price just one step away own it, feel it.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus sint, delectus odit nobis
+                    laboriosam ipsum
+                    voluptas officiis. Quidem possimus vero sed alias perspiciatis a rerum, eum magnam, nisi impedit
+                    porro
+                    mollitia quos. Autem minus sequi eveniet omnis odit labore quo, inventore in dolor ipsa tempora
+                    reprehenderit, non harum, quasi veritatis. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Necessitatibus itaque quam iure ducimus natus eaque error et facilis explicabo placeat. Soluta, a.
+                    Iste
+                    corrupti commodi corporis dolore nesciunt reiciendis ducimus quod labore dignissimos? Voluptates
+                    reiciendis
+                    provident dicta quidem sed unde, eaque est? Fuga sunt iusto ipsa excepturi ex, inventore saepe
+                    magnam velit
+                    quasi consectetur illum nobis harum fugiat eum reprehenderit? Officia, reprehenderit totam
+                    accusantium
+                    inventore mollitia odit, culpa, quaerat nam praesentium delectus velit voluptates ullam pariatur
+                    obcaecati
+                    doloribus! Cupiditate eius odit ut veritatis rem, aliquam et velit omnis neque excepturi nam
+                    obcaecati
+                    labore, laudantium rerum soluta eveniet voluptas, ipsam nihil?F</p>
             </div>
+        </main>
+        <footer>
+            &copy;all right resevered by AOT | 2025
+        </footer>
+    </div>
 
-            <body>
+    <body>
 
 </html>

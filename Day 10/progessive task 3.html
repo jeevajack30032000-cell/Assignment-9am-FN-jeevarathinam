@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 3 progessive task</title>
+    <style>
+.gallery {
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.gallery-item {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05); 
+}
+    </style>
+</head>
+
+<body>
+    <section class="gallery">
+        <div class="gallery-item">
+            <img src="../Day 9/jersey no.1.jpg" alt="Description of Photo 1">
+        </div>
+
+        <div class="gallery-item">
+            <img src="../Day 9/Jersey no.2.jpg" alt="Description of Photo 2">
+        </div>
+
+        <div class="gallery-item">
+            <img src="../Day 9/Jersey no.3.jpg" alt="Description of Photo 3">
+        </div>
+
+        <div class="gallery-item">
+            <img src="../Day 9/Jersey no.4.jpg" alt="Description of Photo 4">
+        </div>
+
+        <div class="gallery-item">
+            <img src="../Day 9/Jersey no.5.jpg" alt="Description of Photo 5">
+        </div>
+    </section>
+
+</body>
+
+</html>
+<!-- 
+Create a photo gallery section using Grid with auto-fill columns -->
