@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox layout into Grid</title>
+
+    <style>
+        body{
+            background-color: rgb(166, 163, 159)
+        }
+        /* flexbox version */
+        .container-1 {
+            display: flex;
+            justify-content: space-between;
+            height: 100px;
+            align-items: center;
+            border: 1px solid rgb(0, 0, 1);
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .item {
+            padding: 10px;
+            background-color: rgb(83, 130, 146);
+        }
+
+        /* used grid version */
+
+        .container-2{
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            height: 100px;
+            align-items: center;
+            border: 1px solid rgb(0, 10, 0);
+            padding: 10px;
+        }
+
+        .item-2 {
+             justify-self: center;
+        }
+
+        .item {
+            padding: 10px;
+            background-color: rgb(111, 163, 111);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-1">
+        <div class="item item-1">One</div>
+        <div class="item item-2">Two</div>
+        <div class="item item-3">Three</div>
+    </div>
+    <div class="container-2">
+        <div class="item item-1">One</div>
+        <div class="item item-2">Two</div>
+        <div class="item item-3">Three</div>
+    </div>
+
+
+</body>
+
+</html>
