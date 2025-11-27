@@ -3,20 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>changes</title>
+    <title>practice task</title>
+    <style>
+
+        /* <!-- task:1 color change box using hover --> */
+         body{
+            background-color: rgb(189, 181, 162);
+        }
+        .box{
+            border: 3px solid black;
+            border-radius: 20px;
+            background: purple;
+            width: 300px;
+            height: 300px;
+            margin-top: 30px;
+            margin-left: 600px;
+            transition: background 1.5s, transform 3s;
+        }
+        .box:hover{
+            background-color: gold;
+            transform: scale(1.0);    
+        } 
+        
+        /* task:2 Animate text moving from left to right using @keyframes */
+
+         .text{
+            border: 2px solid black;
+            position: relative;
+            width: 200px;
+            color: aqua;
+            border-radius: 20px;
+            background: blue;
+            box-sizing: border-box;
+            width: 300px;
+            animation: moveRight 10s  linear infinite;
+            box-shadow: 0 2px 10px black;
+            
+        }
+        @keyframes moveRight{
+            0%{
+                left: 0;
+            }
+            100%{
+                left: 100%;
+            }
+
+        }
+
+         .image{
+            width: 100px;
+            height: 500px;
+            margin-left: 600px;
+            margin-top: 100px;
+            border: 3px solid red;
+            box-sizing: border-box;
+        }
+        .image:hover{
+            transform: scale(2);
+
+        }
+
+
+    </style>
 
 
 
 
+    </style>
 </head>
 <body>
-    
+    <!-- task:1 color change box using hover -->
+
+    <h1 align="center">color changing box</h1>
+    <div class="box"></div>
+
+    <hr>
+
+    <!-- task:2 Animate text moving from left to right using @keyframes -->
+
+    <h1 align="center">moving text left to right</h1>
+    <div class="text">
+        <p style="padding: 10px;">LIKE AND SUBSCRIBE THE VIDEO</p>
+    </div>
+
+    <hr>
+
+    <!-- task3: use scale() to make an image grow when hovered. -->
+
+    <h1 align="center">image grow when use hover</h1>
+    <div class="image">
+        <img src="../Day 6.1/jorden shoes.jpg">
+    </div>
+
+    <hr>
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
 
-<!-- Create a box that changes color smoothly on hover.
-
-Animate text moving from left to right using @keyframes.
+<!--Animate text moving from left to right using @keyframes.
 
 Use scale() to make an image grow when hovered.
 
