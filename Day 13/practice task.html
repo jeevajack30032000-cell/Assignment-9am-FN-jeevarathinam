@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice task</title>
+    <style>
+
+        /* <!-- task:1 color change box using hover --> */
+         body{
+            background-color: rgb(189, 181, 162);
+        }
+        h1{
+            text-align: center;
+        }
+        .box{
+            border: 3px solid black;
+            border-radius: 20px;
+            background: purple;
+            width: 300px;
+            height: 300px;
+            margin-top: 30px;
+            margin-left: 600px;
+            transition: background 1.5s, transform 3s;
+        }
+        .box:hover{
+            background-color: gold;
+            transform: scale(1.0);    
+        } 
+        
+        /* task:2 Animate text moving from left to right using @keyframes */
+
+         .text{
+            border: 2px solid black;
+            position: relative;
+            width: 200px;
+            color: aqua;
+            border-radius: 20px;
+            background: blue;
+            box-sizing: border-box;
+            width: 300px;
+            animation: moveRight 10s  linear infinite;
+            box-shadow: 0 2px 10px black;
+            
+        }
+        @keyframes moveRight{
+            0%{
+                left: 0;
+            }
+            100%{
+                left: 100%;
+            }
+
+        }
+        img{
+            width: 125px;
+            height: 125px;
+            border: 3px solid black
+        }
+
+         .image{
+            width: 100px;
+            height: 100px;
+            margin-left: 600px;
+            margin-top: 10px;
+            box-sizing: border-box;
+        }
+        .image:hover{
+          
+         transform:scale(1.20);
+        box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        background-color: aquamarine;
+
+        }
+
+        /* task4:Rotate a square continuously using animation */
+        
+        .square{
+            border: 5px solid rgb(76, 82, 83);
+            box-shadow: 0px 2px 10px black ;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            margin-left: 600px;
+            margin-top: 80px;
+            background-color: greenyellow;
+            text-align: center;
+            padding: 50px;
+            animation: rotation 8s linear infinite;
+        }
+        @keyframes rotation {
+            0%{ transform: Rotate(0deg); }
+            100% { transform: Rotate(360deg); }
+        }
+
+         /* task5: Make a button with smooth hover and focus effects */
+
+        button{
+            margin-left: 600px;
+            margin-top: 100px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 2s ease, transform 2s ease, box-shadow 2s ease;
+            outline: none;
+        }
+
+        button:hover{
+            background-color: rgb(247, 148, 226);
+            transform: scale(1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+        }
+
+        button:focus{
+            background-color: rgb(190, 253, 95);
+            box-shadow: 0 10px 3px rgba(4, 66, 117, 0.6);
+
+        }
+
+    </style>
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- task:1 color change box using hover -->
+
+    <h1>color changing box</h1>
+    <div class="box"></div> <br><br>
+
+    <hr>
+
+    <!-- task:2 Animate text moving from left to right using @keyframes -->
+
+    <h1>moving text left to right</h1>
+    <div class="text">
+        <p style="padding: 10px;">LIKE AND SUBSCRIBE THE VIDEO</p>
+    </div> <br><br>
+
+    <hr>
+
+    <!-- task3: use scale() to make an image grow when hovered. -->
+
+    <h1>image grow when use hover</h1>
+    <div class="image">
+        <img src="../Day 6.1/jorden shoes.jpg">
+    </div> <br><br><br>
+
+    <hr>
+
+    <!-- task4: Rotate a square continuously using animation -->
+
+    <h1>Rotate a square box continuously</h1>
+
+    <div class="square">
+        square-box
+    </div> <br><br>
+
+    <hr>
+    <!-- task5: Make a button with smooth hover and focus effects. -->
+
+    <h1>button with smooth hover and focus effects</h1>
+    <button>CLICK THIS AND GET TREASURE</button> <br><br>
+
+    <hr>
+
+</body>
+</html>

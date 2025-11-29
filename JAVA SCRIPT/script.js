@@ -3,8 +3,11 @@
 // let a = 48;
 // let A ="48"
 
-console.log(msg);
+// console.log(msg);
 
-var msg="hello world"
-console.log(msg);
+// var msg="hello world"
+// console.log(msg);
 
+// let a = 13;
+// let b = 12;
+// console.log(addition :"");

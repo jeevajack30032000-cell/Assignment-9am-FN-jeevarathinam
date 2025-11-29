@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRACTICAL TASK</title>
+    <style>
+      body {
+        background-color: grey;
+      }
+      h1 {
+        text-align: center;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-weight: bolder;
+      }
+
+      /* task1:loader animation using border and rotation */
+
+      .loader {
+        border: 8px solid #f3f3f3;
+        border-top: 8px solid lightskyblue;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        animation: spin 1.5s linear infinite;
+        margin-left: 700px;
+      }
+      @keyframes spin {
+        0% {
+          transform: Rotate(0deg);
+        }
+        100% {
+          transform: Rotate(360deg);
+        }
+      }
+
+      /* task2:Design a card flip effect using rotateY */
+
+      .flip-card {
+        width: 200px;
+        height: 120px;
+        perspective: 1000px;
+        margin-bottom: 40px;
+        margin-left: 650px;
+        margin-top: 50px;
+      }
+      .flip-inner {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform 0.7s ease;
+      }
+      .flip-card:hover .flip-inner {
+        transform: rotateY(180deg);
+      }
+      .front,
+      .back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+      }
+      .front {
+        background-color: rgb(240, 5, 154);
+        color: rgb(250, 194, 194);
+      }
+      .back {
+        background-color: aquamarine;
+        color: black;
+        transform: rotateY(180deg);
+      }
+
+      /* task3:progress bar filling up */
+
+      .progress-container {
+        width: 300px;
+        height: 20px;
+        background: #eee;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 40px;
+      }
+      .progress-bar {
+        height: 100%;
+        width: 0;
+        background: green;
+        animation: fill 3s ease-in-out forwards;
+      }
+      @keyframes fill {
+        0% {
+          width: 0%;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+
+      /* task4:Build a bouncing ball animation using @keyframes. */
+
+      .ball {
+        width: 50px;
+        height: 50px;
+        background: red;
+        border-radius: 50%;
+        position: relative;
+        animation: bounce 1s infinite alternate ease-in-out;
+        margin-bottom: 40px;
+        margin-left: 700px;
+      }
+      @keyframes bounce {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(120px);
+        }
+      }
+
+      /* task5:Add hover transitions to your portfolio or product cards. */
+
+      .card-container {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .product-card {
+        width: 200px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: all 0.3s ease;
+      }
+
+      .product-card:hover {
+        transform: translateY(-10px) scale(1.05);
+        box-shadow: 0 12px 20px black;
+      }
+
+      .product-card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+
+      .product-card:hover img {
+        transform: scale(1.5);
+      }
+
+      .product-card h3 {
+        margin: 10px 0 5px;
+        font-size: 18px;
+        color: lightsalmon;
+      }
+
+      .product-card p {
+        margin: 0 10px 10px;
+        font-size: 14px;
+        color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>loader animation</h1>
+    <div class="loader"></div>
+    <br /><br />
+    <hr />
+
+    <h1>Card Flip Effect</h1>
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="front">WAR IN</div>
+        <div class="back">WAR OFF</div>
+      </div>
+    </div>
+    <br /><br />
+    <hr />
+
+    <h1>progress bar filling up</h1>
+    <div class="progress-container">
+      <div class="progress-bar">loading...</div>
+    </div>
+    <br />
+    <hr />
+
+    <h1>bouncing ball</h1>
+    <div class="ball"></div>
+    <br />
+    <hr />
+
+    <h1>hover transitions to your profile</h1>
+    <div class="card-container">
+      <div class="product-card">
+        <img src="../Day 9/jersey no.1.jpg" alt="Product" />
+        <h3>pink jersey</h3>
+        <p>Used to capture Something.</p>
+      </div>
+      <div class="product-card">
+        <img src="../Day 9/Jersey no.5.jpg" alt="Product" />
+        <h3>white jersey</h3>
+        <p>used to wear it</p>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- Create a loader animation using border and rotation.
+
+Design a card flip effect using rotateY.
+
+Animate a progress bar filling up using width keyframes.
+
+Build a bouncing ball animation using @keyframes.
+
+Add hover transitions to your portfolio or product cards. -->
