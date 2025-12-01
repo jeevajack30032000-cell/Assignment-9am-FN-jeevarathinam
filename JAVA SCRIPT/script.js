@@ -1,13 +1,2 @@
-// console.log("jeeva");
-
-// let a = 48;
-// let A ="48"
-
-// console.log(msg);
-
-// var msg="hello world"
-// console.log(msg);
-
-// let a = 13;
-// let b = 12;
-// console.log(addition :"");
+let a=10;
+console.log(a);
