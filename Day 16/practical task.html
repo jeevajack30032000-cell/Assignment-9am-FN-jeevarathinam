@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practical task</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- Custom Styles for Aesthetics and Font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa; /* Light background */
+            color: #343a40;
+        }
+        .navbar-brand img {
+            height: 30px;
+        }
+        .section-header {
+            padding-top: 3rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #e9ecef;
+            margin-bottom: 2rem;
+        }
+        .card {
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            border: none;
+        }
+        .carousel-item img {
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .faq-accordion .accordion-button {
+            font-weight: 600;
+            color: #495057;
+            background-color: #e9ecef;
+        }
+        .contact-modal-header {
+            background-color: #0d6efd;
+            color: white;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .btn-primary {
+            background-color: #0d6efd;
+            border-color: #0d6efd;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+        .btn-primary:hover {
+            transform: translateY(-1px);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Navbar with Icons -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="bi bi-code-square me-2 fs-4"></i>
+                PortfolioHub
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-door-fill me-1"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio"><i class="bi bi-images me-1"></i> Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products"><i class="bi bi-box-seam me-1"></i> Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq"><i class="bi bi-question-circle-fill me-1"></i> FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Trigger the Contact Modal -->
+                        <button type="button" class="btn btn-outline-light ms-lg-3" data-bs-toggle="modal" data-bs-target="#contactModal">
+                            <i class="bi bi-chat-dots-fill me-1"></i> Contact Me
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+
+        <!-- 2. Gallery Carousel for Portfolio Homepage -->
+        <h2 class="section-header" id="portfolio">Portfolio Gallery Showcase</h2>
+        <p class="lead text-center mb-4">A look at some of my recent and most challenging projects.</p>
+
+        <div id="portfolioCarousel" class="carousel slide shadow-lg" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner rounded-3">
+                
+                <div class="carousel-item active">
+                    <img src="https://placehold.co/1200x500/1e90ff/ffffff?text=Project+Atlas+-+Web+App" class="d-block w-100" alt="Web Application Screenshot">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 p-3 rounded-top">
+                        <h5>Project Atlas: Data Visualization</h5>
+                        <p>A complex dashboard built using React and D3.js for real-time data monitoring.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://placehold.co/1200x500/3cb371/ffffff?text=Mobile+Game+Design+-+Vector+Art" class="d-block w-100" alt="Mobile Game Artwork">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 p-3 rounded-top">
+                        <h5>Vector Illustration & Game Assets</h5>
+                        <p>Stylized 2D assets for a mobile puzzle game, focusing on clean vector graphics.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://placehold.co/1200x500/ff6347/ffffff?text=Brand+Identity+Design+-+Mockup" class="d-block w-100" alt="Branding Mockup">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 p-3 rounded-top">
+                        <h5>Corporate Brand Identity</h5>
+                        <p>Complete branding package, including logo, typography guidelines, and style guide.</p>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- End Gallery Carousel -->
+        
+        <!-- 5. Product Showcase (Carousel + Collapse) -->
+        <h2 class="section-header" id="products">Product Showcase</h2>
+        <p class="lead text-center mb-4">Conceptual or developed products featuring full descriptions.</p>
+
+        <div class="card p-4 mb-5 shadow">
+            <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner rounded-3">
+                    
+                    <!-- Product 1 -->
+                    <div class="carousel-item active">
+                        <img src="https://placehold.co/1200x400/8a2be2/ffffff?text=Product+A:+The+Luminar+Device" class="d-block w-100" alt="Product Luminar">
+                        <div class="p-3 text-center">
+                            <h4 class="mt-3">The Luminar Device</h4>
+                            <p>A smart, connected lighting controller with dynamic scheduling features.</p>
+                            <!-- Collapse Trigger -->
+                            <button class="btn btn-sm btn-info text-white" type="button" data-bs-toggle="collapse" data-bs-target="#detailsLuminar" aria-expanded="false" aria-controls="detailsLuminar">
+                                More Details
+                            </button>
+                            <!-- Collapse Content -->
+                            <div class="collapse mt-3" id="detailsLuminar">
+                                <div class="card card-body text-start border-primary border-3">
+                                    <p>The Luminar Device features ultra-low latency Wi-Fi connectivity and an intuitive mobile app. It supports voice control via all major smart home platforms and offers energy consumption tracking.</p>
+                                    <ul class="list-unstyled">
+                                        <li><i class="bi bi-lightning-charge-fill me-2 text-warning"></i> 99% Energy Efficiency</li>
+                                        <li><i class="bi bi-app-indicator me-2 text-primary"></i> Cross-Platform App Support</li>
+                                        <li><i class="bi bi-stars me-2 text-success"></i> Ambient Light Sensor Integration</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="carousel-item">
+                        <img src="https://placehold.co/1200x400/ffa500/ffffff?text=Product+B:+Aura+Health+Tracker" class="d-block w-100" alt="Product Aura">
+                        <div class="p-3 text-center">
+                            <h4 class="mt-3">Aura Health Tracker</h4>
+                            <p>Non-intrusive wearable technology for continuous heart and sleep pattern analysis.</p>
+                            <!-- Collapse Trigger -->
+                            <button class="btn btn-sm btn-info text-white" type="button" data-bs-toggle="collapse" data-bs-target="#detailsAura" aria-expanded="false" aria-controls="detailsAura">
+                                More Details
+                            </button>
+                            <!-- Collapse Content -->
+                            <div class="collapse mt-3" id="detailsAura">
+                                <div class="card card-body text-start border-warning border-3">
+                                    <p>Aura uses advanced photoplethysmography (PPG) sensors to provide medical-grade tracking without the bulk of a traditional smartwatch. Its battery lasts up to 14 days on a single charge.</p>
+                                    <ul class="list-unstyled">
+                                        <li><i class="bi bi-heart-fill me-2 text-danger"></i> Continuous PPG Monitoring</li>
+                                        <li><i class="bi bi-moon-stars-fill me-2 text-info"></i> Detailed Sleep Cycle Analysis</li>
+                                        <li><i class="bi bi-battery-full me-2 text-success"></i> 2-Week Battery Life</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark p-3 rounded-circle" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark p-3 rounded-circle" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- End Product Showcase -->
+
+
+        <!-- 3. FAQ Section using Multiple Collapses (Accordion) -->
+        <h2 class="section-header" id="faq">Frequently Asked Questions</h2>
+        
+        <div class="accordion faq-accordion" id="faqAccordion">
+            
+            <!-- Item 1 -->
+            <div class="accordion-item card mb-2">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="bi bi-info-circle-fill me-2 text-primary"></i> What is your primary area of expertise?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        My primary focus is on full-stack web development, specializing in front-end frameworks like React and Angular, combined with robust, scalable back-end services using Node.js and cloud platforms.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="accordion-item card mb-2">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <i class="bi bi-currency-dollar me-2 text-success"></i> What is your typical project rate?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Project rates vary significantly based on complexity, required technologies, and timeline. I prefer to provide a fixed-price quote after an initial consultation to fully scope the project. Let's discuss your requirements via the Contact Form!
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="accordion-item card mb-2">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <i class="bi bi-clock-fill me-2 text-warning"></i> What is your availability for new projects?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        My schedule often has a lead time of 2-4 weeks. For urgent or smaller tasks, I might be able to fit them in sooner. Please use the contact form to provide details on your deadline, and I will respond with an accurate availability estimate.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- End FAQ Section -->
+
+    </div>
+
+    <!-- 4. Custom Modal for "Contact Form" (Hidden by default) -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-3 shadow-lg">
+                <div class="modal-header contact-modal-header p-4">
+                    <h5 class="modal-title" id="contactModalLabel">
+                        <i class="bi bi-envelope-fill me-2"></i> Get In Touch
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <p class="text-muted">I respond to all inquiries within 24 hours.</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="contactName" class="form-label">Your Name</label>
+                            <input type="text" class="form-control rounded-pill" id="contactName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactEmail" class="form-label">Email Address</label>
+                            <input type="email" class="form-control rounded-pill" id="contactEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactMessage" class="form-label">Message / Project Details</label>
+                            <textarea class="form-control rounded-3" id="contactMessage" rows="4" required></textarea>
+                        </div>
+                        <div class="d-grid mt-4">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-center bg-light">
+                    <p class="small text-muted mb-0">Powered by modern web standards.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact Modal -->
+
+    <!-- 4. Footer with Icons -->
+    <footer class="bg-dark text-white mt-5 py-4">
+        <div class="container text-center">
+            <div class="mb-3">
+                <a href="#" class="text-white mx-2 fs-4"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="text-white mx-2 fs-4"><i class="bi bi-github"></i></a>
+                <a href="#" class="text-white mx-2 fs-4"><i class="bi bi-twitter"></i></a>
+            </div>
+            <p class="mb-0">&copy; 2024 Portfolio Showcase. All Rights Reserved. | <span class="text-primary">Built with Bootstrap 5</span></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle CDN (Popper included) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+<!-- Build a gallery carousel for a portfolio homepage.
+
+Create an FAQ section using multiple collapses.
+
+Design a custom modal for a “Contact Form.”
+
+Add icons to your navbar, footer, or cards.
+
+Build a product showcase using a carousel + collapse “More Details” section.
+ -->
