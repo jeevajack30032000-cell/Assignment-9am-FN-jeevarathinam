@@ -6,6 +6,34 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="container">
+    <h1> JavaScript Interactive Demo</h1>
+
+    <!-- TASK 1: Dynamic text display -->
+    <div>
+      <h2>Dynamic Text</h2>
+      <p>Click the button to change the text dynamically:</p>
+      <button onclick="changeDynamicText()">Change Text</button>
+      <div id="dynamicText" class="dynamic-text">
+        Click the button to see dynamic JavaScript in action!
+      </div>
+    </div>
+
+    <!-- TASK 4: Button that changes <p> text -->
+    <div>
+      <h2>Interactive Paragraph</h2>
+      <p id="changeableText">This paragraph will change when you click the button below.</p>
+      <button onclick="changetext()">Change Paragraph Text</button>
+    </div>
+
+    <!-- TASK 5: About Me section -->
+    <div class="about-section">
+      <h2>About Me</h2>
+      <p>Click the button to see personal details in the console (F12 → Console):</p>
+      <button onclick="aboutMe()">Show About Me</button>
+    </div>
+  </div>
+
 
     <script>
     // Display dynamic text
@@ -22,15 +50,19 @@
     console.log("My favorite color is blue.");
 
     // Button to change text inside a <p>
-    function changeText() {
+    function changeparagraph() {
         document.getElementById("myParagraph").innerText = "The text has been changed!";
     }
 
     // About Me script
+     function aboutMe() {
     console.log("About Me:");
-    console.log("Name: John Doe");
-    console.log("Age: 30");
+    console.log("Name: jeevarathinam");
+    console.log("Age: 25");
     console.log("Occupation: Developer");
+    console.log("")
+    alert("Check the console (F12 → Console tab) for About Me details! 📋");
+    }
     </script>
     <body>
 </html>
