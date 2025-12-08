@@ -1,0 +1,71 @@
+<!-- Student Profile (object + strings + numbers).
+
+Product Price Calculator (number + string conversion).
+
+Login Status Indicator (boolean usage).
+
+BigInt large number addition example.
+
+Create 3 users with unique symbol IDs. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6 to 10</title>
+   
+</head>
+<body>
+    
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // Student Profile
+        const studentProfile = {
+            name: "Jeevarathinam",
+            age: 24,
+            major: "Computer Science"
+        };
+        console.log("Student Profile:", studentProfile);
+
+        // Product Price Calculator
+        function calculateTotalPrice(price, quantity) {
+            return price * quantity;
+        }
+        const totalPrice = calculateTotalPrice(499.99, 3);
+        console.log("Total Price:", totalPrice);
+
+        // Login Status Indicator
+        let isLoggedIn = false;
+        console.log("Login Status:", isLoggedIn);
+
+        // BigInt large number addition example
+        const bigInt1 = BigInt("9007199254740991");
+        const bigInt2 = BigInt("12345678901234567890");
+        const bigIntSum = bigInt1 + bigInt2;
+        console.log("BigInt Sum:", bigIntSum.toString());
+
+        // Create 3 users with unique symbol IDs
+        const user1 = { id: Symbol("user1"), name: "Alice" };
+        const user2 = { id: Symbol("user2"), name: "Bob" };
+        const user3 = { id: Symbol("user3"), name: "Charlie" };
+        console.log("Users:", user1, user2, user3);
+    </script>
+
+
+
+
+
+    
+</body>
+</html>
+

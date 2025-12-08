@@ -1,58 +1,37 @@
+<!-- Create an HTML page and display dynamic text using JavaScript. -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>practical task</title>
-
-    </head>
-
-<body>
-    <h1>JavaScript Interaction Page</h1>
-
-    <p id="dynamicText">Click the button to change this text.</p>
-
-    <button onclick="showDynamicText()">Change Text</button>
-
+    <title>Dynamic Text Example</title>
     <script>
-        // ----- PAGE LOAD ALERT -----
-        window.onload = function () {
-            alert("Welcome to my webpage!");
-        };
-
-        // ----- DYNAMIC TEXT DISPLAY -----
-        function showDynamicText() {
-            document.getElementById("dynamicText").innerText = "This text was changed using JavaScript!";
+        function changeDynamicText() {
+            document.getElementById("dynamicText").innerText = "The text has been changed dynamically!";
         }
+        
 
-        // ----- LOGGING FAVORITE THINGS -----
-        console.log("My favorite hobby: Drawing");
-        console.log("My favorite game: cricket");
-        console.log("My favorite movie: interstellar");
 
-        // ----- ABOUT ME SCRIPT -----
-        function aboutMe() {
-            console.log("---- About Me ----");
-            console.log("Name: Jeeva");
-            console.log("Age: 20");
-            console.log("Country: India");
-            console.log("Goal: Become a skilled Web Developer");
-        }
 
-        // Call About Me on load
-        aboutMe();
+        // function displayDynamicText() {
+        //     const dynamicText = "Welcome to my dynamic webpage!";
+        //     document.getElementById("dynamic-text").innerText = dynamicText;
+        // }
+        // window.onload = displayDynamicText;
     </script>
-
+</head>
+<body></body>
+    <div>
+      <h2>Dynamic Text</h2>
+      <p>Click the button to change the text dynamically:</p>
+      <button onclick="changeDynamicText()">Change Text</button>
+      <div id="dynamicText" class="dynamic-text">
+        Click the button to see dynamic JavaScript in action!
+      </div>
+    </div>
 
 </body>
-</html>
-<!--
-Create an HTML page and display dynamic text using JavaScript.
+</html> 
 
-Build a simple “Welcome” alert that triggers when the page loads.
 
-Create a script that logs your favorite hobby, food, and color.
-
-Make a button that changes text inside a <p> when clicked.
-
-Build a tiny “About Me” script that prints multiple details to the console. -->
