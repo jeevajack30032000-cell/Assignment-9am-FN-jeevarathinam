@@ -1,5 +1,4 @@
-let a=10;
-console.log(a);
+/
 
 
 
@@ -13,6 +12,15 @@ console.log(a);
 //                       key words : function , return , call , invoke , parameters , arguments
 
 // function declaration
-function greet(name) {
-    return "Hello, " + name + "!";
+// function greet(name) {
+//     return "Hello, " + name + "!";
+// }
+
+// whhat is incremen
+
+class person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
 }

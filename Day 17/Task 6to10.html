@@ -1,37 +1,45 @@
-<!-- Create an HTML page and display dynamic text using JavaScript. -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Text Example</title>
-    <script>
-        function changeDynamicText() {
-            document.getElementById("dynamicText").innerText = "The text has been changed dynamically!";
-        }
-        
-
-
-
-        // function displayDynamicText() {
-        //     const dynamicText = "Welcome to my dynamic webpage!";
-        //     document.getElementById("dynamic-text").innerText = dynamicText;
-        // }
-        // window.onload = displayDynamicText;
-    </script>
+    <title>Task 6-10</title>
 </head>
-<body></body>
-    <div>
-      <h2>Dynamic Text</h2>
-      <p>Click the button to change the text dynamically:</p>
-      <button onclick="changeDynamicText()">Change Text</button>
-      <div id="dynamicText" class="dynamic-text">
-        Click the button to see dynamic JavaScript in action!
-      </div>
-    </div>
+<body>
+    <h2>JavaScript Practical Mini Projects</h2>
 
+    <!-- Dynamic Text Section -->
+    <h3 id="dynamicText">This text will change dynamically.</h3>
+
+    <!-- Paragraph to change -->
+    <p id="paraText">Original paragraph text.</p>
+
+    <!-- Button -->
+    <button onclick="changeText()">Click to Change Text</button>
+
+    <script>
+        // Display dynamic text using JavaScript
+        document.getElementById("dynamicText").innerText = "This text is dynamically added using JavaScript!";
+
+        // Build a simple Welcome alert
+        alert("Welcome! This is your JavaScript mini project page.");
+
+        // Log favorite hobby, food, color
+        console.log("My Hobby: Gaming");
+        console.log("My Favorite Food: Biryani");
+        console.log("My Favorite Color: Blue");
+
+        // Button script to change paragraph text
+        function changeText() {
+            document.getElementById("paraText").innerText = "Paragraph updated successfully!";
+        }
+
+        // Tiny About Me script
+        console.log("--- About Me ---");
+        console.log("Name: jeevarthinam s");
+        console.log("Country: India");
+        console.log("Favorite Sport: Cricket");
+        console.log("goal: To become a successful developer and wanne be a businessman");
+    </script>
 </body>
-</html> 
-
-
+</html>
