@@ -1,34 +1,16 @@
-<!-- Student Profile (object + strings + numbers).
+// Student Profile (object + strings + numbers).
 
-Product Price Calculator (number + string conversion).
+// Product Price Calculator (number + string conversion).
 
-Login Status Indicator (boolean usage).
+// Login Status Indicator (boolean usage).
 
-BigInt large number addition example.
+// BigInt large number addition example.
 
-Create 3 users with unique symbol IDs. -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 6 to 10</title>
-   
-</head>
-<body>
+// Create 3 users with unique symbol IDs.
     
 
 
 
-
-
-
-
-
-
-
-
-    <script>
         // Student Profile
         const studentProfile = {
             name: "Jeevarathinam",
@@ -59,13 +41,4 @@ Create 3 users with unique symbol IDs. -->
         const user2 = { id: Symbol("user2"), name: "Bob" };
         const user3 = { id: Symbol("user3"), name: "Charlie" };
         console.log("Users:", user1, user2, user3);
-    </script>
-
-
-
-
-
-    
-</body>
-</html>
-
+        

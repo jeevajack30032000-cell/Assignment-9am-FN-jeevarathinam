@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Day 19 Progressive Project</title>
+</head>
+<body>
+
+    <h1>Student Attendance App</h1>
+    <button onclick="login('admin', '1234')">Login</button>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <button onclick="addStudent()">Add Student</button>
+    <button onclick="showStudents()">Show Students</button>
+
+    <script>
+        // --- Boolean UI States ---
+        let isLoggedIn = false;
+        let isDarkMode = false;
+
+        // --- Array to store students ---
+        let students = [];
+
+        // --- Function to login ---
+        function login(username, password) {
+            if (username === "admin" && password === "1234") {
+                isLoggedIn = true;
+                console.log("Login Successful!");
+            } else {
+                console.log("Invalid details");
+            }
+        }
+
+        // --- Function to toggle dark mode ---
+        function toggleDarkMode() {
+            isDarkMode = !isDarkMode;
+            console.log("Dark Mode:", isDarkMode);
+
+            if (isDarkMode) {
+                document.body.style.background = "black";
+                document.body.style.color = "white";
+            } else {
+                document.body.style.background = "white";
+                document.body.style.color = "black";
+            }
+        }
+
+        // --- Function to add student ---
+        function addStudent() {
+            let name = prompt("Enter student name:");
+            let age = Number(prompt("Enter age:"));
+            let course = prompt("Enter course name:");
+
+            let studentObj = {
+                name: name,
+                age: age,
+                course: course,
+                passed: age > 17 // boolean example
+            };
+
+            students.push(studentObj);
+            console.log("Student Added:", studentObj);
+        }
+
+        // --- Function to view all students ---
+        function showStudents() {
+            console.log("All Students:", students);
+        }
+
+        // --- Usage Example (optional) ---
+        // login("admin", "1234");  
+        // toggleDarkMode();  
+        // addStudent();  
+        // showStudents();
+    </script>
+
+</body>
+</html>
