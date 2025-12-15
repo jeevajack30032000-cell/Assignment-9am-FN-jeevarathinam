@@ -18,9 +18,17 @@
 
 // whhat is incremen
 
-class person {
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
-    }
-}
+// class person {
+//     constructor(name, age) {
+//         this.name = name;
+//         this.age = age;
+//     }
+
+
+
+// error handling in js
+
+// prevents application from crashing
+// improves user experience
+// help debug code
+// required in real world applications
