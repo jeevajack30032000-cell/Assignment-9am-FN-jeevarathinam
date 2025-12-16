@@ -1,4 +1,4 @@
-/
+
 
 
 
@@ -32,3 +32,14 @@
 // improves user experience
 // help debug code
 // required in real world applications
+
+
+
+// var price = 100;
+// var product = "laptop";
+// var tax = 10;
+// console.log(product);
+// var total = price + tax;
+// console.log(total);
+
+// Print numbers 1–10 using a for loop.
