@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>practical task</title>
+</head>
+<body>
+  <h2>Day 21 - JavaScript Mini Projects</h2>
+
+    <!-- 1. Multiplication Table -->
+    <h3>1. Multiplication Table Generator</h3>
+    <input id="numInput" type="number" placeholder="Enter a number">
+    <button onclick="generateTable()">Generate</button>
+    <pre id="tableOutput"></pre>
+
+    <!-- 2. Array Search -->
+    <h3>2. Array Search Program</h3>
+    <button onclick="searchArray()">Search for 'apple'</button>
+    <p id="searchResult"></p>
+
+    <!-- 3. Password Retries -->
+    <h3>3. Password Retry (do…while)</h3>
+    <button onclick="passwordCheck()">Start Login</button>
+
+    <!-- 4. Cart Total Calculator -->
+    <h3>4. Cart Total Calculator</h3>
+    <button onclick="calculateTotal()">Calculate Total</button>
+    <p id="cartTotal"></p>
+
+    <!-- 5. Attendance Checker -->
+    <h3>5. Attendance Checker</h3>
+    <button onclick="checkAttendance()">Check Attendance</button>
+    <pre id="attendanceOutput"></pre>
+
+
+<script>
+
+    // 1. Multiplication Table Generator
+    function generateTable() {
+        let num = document.getElementById("numInput").value;
+        let result = "";
+
+        for (let i = 1; i <= 10; i++) {
+            result += `${num} x ${i} = ${num * i}\n`;
+        }
+
+        document.getElementById("tableOutput").innerText = result;
+    }
+
+
+
+    // 2. Array Search Program
+    function searchArray() {
+        const fruits = ["banana", "apple", "orange", "mango"];
+        let found = false;
+
+        for (let item of fruits) {
+            if (item === "apple") {
+                found = true;
+                break;
+            }
+        }
+
+        document.getElementById("searchResult").innerText =
+            found ? "Apple found! " : "Apple not found.";
+    }
+
+
+
+    // 3. Password Retries (do…while)
+    function passwordCheck() {
+        let correctPassword = "1234";
+        let userInput;
+
+        do {
+            userInput = prompt("Enter password:");
+        } while (userInput !== correctPassword);
+
+        alert("Login Successful!");
+    }
+
+
+
+    // 4. Cart Total Calculator
+    function calculateTotal() {
+        const prices = [120, 50, 200, 99]; 
+        let total = 0;
+
+        for (let price of prices) {
+            total += price;
+        }
+
+        document.getElementById("cartTotal").innerText =
+            "Total Cart Value: ₹" + total;
+    }
+
+
+
+    // 5. Attendance Checker
+    function checkAttendance() {
+        const students = {
+            Ram: true,
+            Vikram: false,
+            Anita: true,
+            Sara: false
+        };
+
+        let output = "";
+
+        for (let name in students) {
+            output += `${name}: ${students[name] ? "Present" : "Absent"}\n`;
+        }
+
+        document.getElementById("attendanceOutput").innerText = output;
+    }
+
+</script>
+
+</body>
+</html>
