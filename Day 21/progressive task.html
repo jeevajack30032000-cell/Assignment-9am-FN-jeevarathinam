@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> progessive task </h2>
+    <h3>Menu List</h3>
+    <ul id="menuList"></ul>
+            
+    <script>
+    // 1. MENU LIST USING LOOP
+    const menuItems = ["Home", "About", "Services", "Contact"]; 
+    const list = document.getElementById("menuList");
+
+    for (const item of menuItems) {
+      const li = document.createElement("li");
+      li.innerText = item;
+      list.appendChild(li);
+    }
+    // 2. ARRAY SEARCH PROGRAM
+    function searchArray() {
+
+        document.getElementById("searchResult").innerText = found ? "'apple' found in array." : "'apple' not found.";
+    }   
+    </script>
+</body>
+</html>
