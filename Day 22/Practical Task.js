@@ -48,6 +48,21 @@ console.log("gradeChecker:", gradeChecker(20));
 
 // 4.Area Calculator
 // Function that returns area of rectangle (length × width).
+function areaOfRectangle(length, width) {
+    return length * width;
+}
+console.log("areaOfRectangle:", areaOfRectangle(5, 10));
+
 
 // 5.Login Function
 // Function checks username/password and returns "Login Successful" or "Try Again". -->
+function login(username, password) {
+    const validUsername = "jeeva";
+    const validPassword = "12345";
+    if (username === validUsername && password === validPassword) {
+        return "Login Successful";
+    } else {
+        return "Try Again";
+    } 
+}
+console.log("login:", login("jeeva", "12345"));
