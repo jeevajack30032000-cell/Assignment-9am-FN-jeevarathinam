@@ -38,5 +38,3 @@ let products = [
 products.forEach(function(product) {
     console.log("Product Name:", product.name);
 });
-
-// Create a class Animal with sound() method — extend to Dog and Cat classes.
