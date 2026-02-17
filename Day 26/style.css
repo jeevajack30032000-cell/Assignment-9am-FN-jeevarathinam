@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: white;
+  color: black;
+  transition: 0.3s;
+}
+
+button {
+  margin: 8px 0;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 6px;
+}
+
+input {
+  padding: 10px;
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: lightgray;
+  margin: 5px;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.projectCard {
+  padding: 15px;
+  margin: 10px 0;
+  background: #f2f2f2;
+  border-radius: 10px;
+}
+
+/* DARK MODE */
+.darkMode {
+  background: #121212;
+  color: white;
+}
+
+.darkMode button {
+  background: white;
+  color: black;
+}

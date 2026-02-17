@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TITLE -->
+  <h1 id="mainTitle">Welcome to My Portfolio</h1>
+
+  <!-- DARK MODE BUTTON -->
+  <button id="darkBtn">🌙 Toggle Dark Mode</button>
+
+  <!-- LIVE INPUT -->
+  <h2>Live Text Preview</h2>
+  <input type="text" id="liveInput" placeholder="Type something...">
+  <p id="liveText">Your text will appear here...</p>
+
+  <!-- COLOR BUTTONS -->
+  <h2>Change Background Color</h2>
+  <button class="colorBtn" data-color="lightblue">Blue</button>
+  <button class="colorBtn" data-color="lightgreen">Green</button>
+  <button class="colorBtn" data-color="lightpink">Pink</button>
+
+  <!-- INNERHTML FORMATTED TEXT -->
+  <h2>Formatted Message</h2>
+  <button id="formatBtn">Show Message</button>
+  <p id="formatText"></p>
+
+  <!-- TO-DO LIST -->
+  <h2>To-Do List App</h2>
+  <form id="todoForm">
+    <input type="text" id="todoInput" placeholder="Enter task">
+    <button type="submit">Add Task</button>
+  </form>
+
+  <ul id="todoList"></ul>
+
+  <!-- ADD PROJECT SECTION -->
+  <h2>Projects</h2>
+  <button id="addProjectBtn">➕ Add New Project</button>
+
+  <div id="projectSection">
+    <div class="projectCard">Project 1: Portfolio Website</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Mini Projects</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: white;
+      color: black;
+      transition: 0.3s;
+    }
+
+    /* Dark Mode Style */
+    .dark-mode {
+      background: #121212;
+      color: white;
+    }
+
+    button {
+      padding: 10px 15px;
+      margin: 5px;
+      cursor: pointer;
+      border: none;
+      border-radius: 6px;
+    }
+
+    .box {
+      margin-top: 25px;
+      padding: 15px;
+      border: 2px solid gray;
+      border-radius: 10px;
+    }
+
+    input {
+      padding: 8px;
+      width: 250px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 5px 0;
+    }
+
+    .color-btn {
+      background: lightgray;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1> JavaScript DOM Mini Projects</h1>
+
+  <!-- 1. Dark Mode Button -->
+  <div class="box">
+    <h2>1. Dark Mode Toggle</h2>
+    <button id="darkBtn">Toggle Dark Mode</button>
+  </div>
+
+  <!-- 2. Live Text Update -->
+  <div class="box">
+    <h2>2. Live Input Text Preview</h2>
+    <input type="text" id="liveInput" placeholder="Type something...">
+    <p>Live Text: <span id="liveText"></span></p>
+  </div>
+
+  <!-- 3. To-Do List App -->
+  <div class="box">
+    <h2>3. To-Do List (appendChild + removeChild)</h2>
+
+    <input type="text" id="todoInput" placeholder="Enter task">
+    <button id="addTodo">Add Task</button>
+
+    <ul id="todoList"></ul>
+  </div>
+
+  <!--4. Multiple Buttons Change Colors -->
+  <div class="box">
+    <h2>4. Change Background Color Buttons</h2>
+
+    <button class="color-btn" data-color="red">Red</button>
+    <button class="color-btn" data-color="green">Green</button>
+    <button class="color-btn" data-color="blue">Blue</button>
+    <button class="color-btn" data-color="orange">Orange</button>
+  </div>
+
+  <!-- 5. innerHTML Formatted HTML -->
+  <div class="box">
+    <h2>5. Insert HTML using innerHTML</h2>
+
+    <button id="htmlBtn">Insert Formatted Text</button>
+    <p id="htmlOutput"></p>
+  </div>
+
+  <script>
+    /* 1. Dark Mode Toggle */
+    const darkBtn = document.getElementById("darkBtn");
+
+    darkBtn.addEventListener("click", function () {
+      document.body.classList.toggle("dark-mode");
+    });
+
+
+    /* 2. Live Input Text Update */
+    const liveInput = document.getElementById("liveInput");
+    const liveText = document.getElementById("liveText");
+
+    liveInput.addEventListener("input", function () {
+      liveText.textContent = liveInput.value;
+    });
+
+
+    /*  3. To-Do List using appendChild() + removeChild() */
+    const todoInput = document.getElementById("todoInput");
+    const addTodo = document.getElementById("addTodo");
+    const todoList = document.getElementById("todoList");
+
+    addTodo.addEventListener("click", function () {
+      if (todoInput.value === "") {
+        alert("Please enter a task!");
+        return;
+      }
+
+      // Create <li>
+      let li = document.createElement("li");
+      li.textContent = todoInput.value;
+
+      // Create Remove Button
+      let removeBtn = document.createElement("button");
+      removeBtn.textContent = "❌";
+      removeBtn.style.marginLeft = "10px";
+
+      // Remove Task using removeChild()
+      removeBtn.addEventListener("click", function () {
+        todoList.removeChild(li);
+      });
+
+      // Append button inside li
+      li.appendChild(removeBtn);
+
+      // Append li into ul
+      todoList.appendChild(li);
+
+      todoInput.value = "";
+    });
+
+
+    /* 4. Multiple Buttons Change Colors */
+    const colorButtons = document.querySelectorAll(".color-btn");
+
+    colorButtons.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        document.body.style.background = btn.dataset.color;
+      });
+    });
+
+
+    /* 5. innerHTML Insert Formatted HTML */
+    const htmlBtn = document.getElementById("htmlBtn");
+    const htmlOutput = document.getElementById("htmlOutput");
+
+    htmlBtn.addEventListener("click", function () {
+      htmlOutput.innerHTML =
+        "This is <b>Bold</b> and this is <i>Italic</i> text inserted dynamically!";
+    });
+  </script>
+
+</body>
+</html>
+
